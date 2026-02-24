@@ -1,0 +1,16 @@
+---
+title: "Hands-on_Ex07"
+author: "Zuo Suhui"
+---
+
+# **Visualising and Analysing Time-oriented Data**
+
+## **Getting Started**
+
+Write a code chunk to check, install and launch the following R packages: scales, viridis, lubridate, ggthemes, gridExtra, readxl, knitr, data.table and tidyverse.
+
+```{R}
+pacman::p_load(scales, viridis, lubridate, ggthemes,
+               gridExtra, readxl, knitr, data.table,
+               CGPfunctions, ggHoriPlot, tidyverse)
+```
