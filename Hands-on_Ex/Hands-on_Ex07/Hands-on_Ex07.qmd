@@ -325,4 +325,4 @@ rice %>%
 
 **Thing to learn from the code chunk above**
 
-# For effective data visualisation design, `factor()` is used convert the value type of *Year* field from numeric to factor.
+For effective data visualisation design, `factor()` is used convert the value type of *Year* field from numeric to factor.
