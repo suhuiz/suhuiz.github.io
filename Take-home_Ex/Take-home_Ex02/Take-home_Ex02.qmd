@@ -3,6 +3,8 @@ title: "Take-home_Ex02"
 author: "Zuo Suhui"
 ---
 
+Link to Shiny App: <https://zuosuhui.shinyapps.io/take-home_ex02/>
+
 # 1. Background
 
 In the highly competitive financial technology (FinTech) and banking sector, customer retention is a critical driver of profitability. Acquiring a new customer is significantly more expensive than retaining an existing one. However, identifying exactly when and why a customer might abandon a financial platform (churn) remains a complex challenge due to the high-dimensional nature of transactional data. FinRetain is designed to address this critical blind spot. It is an interactive visual analytics platform built to help financial analysts and product stakeholders dynamically explore customer demographics, track behavioral friction points, and proactively predict churn using advanced statistical modeling.

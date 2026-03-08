@@ -1082,14 +1082,14 @@
     "href": "Take-home_Ex/Take-home_Ex02/Take-home_Ex02.html",
     "title": "Take-home_Ex02",
     "section": "",
-    "text": "In the highly competitive financial technology (FinTech) and banking sector, customer retention is a critical driver of profitability. Acquiring a new customer is significantly more expensive than retaining an existing one. However, identifying exactly when and why a customer might abandon a financial platform (churn) remains a complex challenge due to the high-dimensional nature of transactional data. FinRetain is designed to address this critical blind spot. It is an interactive visual analytics platform built to help financial analysts and product stakeholders dynamically explore customer demographics, track behavioral friction points, and proactively predict churn using advanced statistical modeling.\n\n\nThe dataset powering FinRetain contains historical records of customer accounts and transactional logs, encompassing:\n\nDemographics: Age, Gender, Education Level, Income Bracket.\nEngagement Metrics: App Logins, Support Tickets Logged, Satisfaction Score (1-5).\nTransactional Data: Transaction counts, average transaction values, and aggregated volumes across various types (Deposits, Payments, Transfers, Withdrawals).\nTarget Variables: Customer Tenure (months), Churn Probability, and Customer Lifetime Value (CLV)."
+    "text": "Link to Shiny App: https://zuosuhui.shinyapps.io/take-home_ex02/"
   },
   {
     "objectID": "Take-home_Ex/Take-home_Ex02/Take-home_Ex02.html#the-dataset",
     "href": "Take-home_Ex/Take-home_Ex02/Take-home_Ex02.html#the-dataset",
     "title": "Take-home_Ex02",
-    "section": "",
-    "text": "The dataset powering FinRetain contains historical records of customer accounts and transactional logs, encompassing:\n\nDemographics: Age, Gender, Education Level, Income Bracket.\nEngagement Metrics: App Logins, Support Tickets Logged, Satisfaction Score (1-5).\nTransactional Data: Transaction counts, average transaction values, and aggregated volumes across various types (Deposits, Payments, Transfers, Withdrawals).\nTarget Variables: Customer Tenure (months), Churn Probability, and Customer Lifetime Value (CLV)."
+    "section": "1.1 The Dataset",
+    "text": "1.1 The Dataset\nThe dataset powering FinRetain contains historical records of customer accounts and transactional logs, encompassing:\n\nDemographics: Age, Gender, Education Level, Income Bracket.\nEngagement Metrics: App Logins, Support Tickets Logged, Satisfaction Score (1-5).\nTransactional Data: Transaction counts, average transaction values, and aggregated volumes across various types (Deposits, Payments, Transfers, Withdrawals).\nTarget Variables: Customer Tenure (months), Churn Probability, and Customer Lifetime Value (CLV)."
   },
   {
     "objectID": "Take-home_Ex/Take-home_Ex02/Take-home_Ex02.html#page-1-exploratory-data-eda",
