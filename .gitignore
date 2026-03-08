@@ -7,7 +7,7 @@
 *.csv
 *.rds
 data/
-_site/
+docs/
 
 /.quarto/
 **/*.quarto_ipynb
