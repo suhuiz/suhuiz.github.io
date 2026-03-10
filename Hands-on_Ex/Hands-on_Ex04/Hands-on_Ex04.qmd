@@ -660,14 +660,6 @@ exam %>%
 
 ## **Visualising Uncertainty with Hypothetical Outcome Plots (HOPs)**
 
-### **Installing ungeviz package**
-
-```{R}
-devtools::install_github("wilkelab/ungeviz")
-```
-
-Note: You only need to perform this step once.
-
 ### **11.5.2 Launch the application in R**
 
 ```{R}
