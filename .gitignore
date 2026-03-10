@@ -9,7 +9,6 @@
 *.rds
 *.mdb
 data/
-docs/
 
 /.quarto/
 **/*.quarto_ipynb
