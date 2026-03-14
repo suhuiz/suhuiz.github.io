@@ -7,95 +7,9 @@ Link to Shiny App: <https://zuosuhui.shinyapps.io/take-home_ex02/>
 
 # 1. Background
 
-In the highly competitive financial technology (FinTech) and banking sector, customer retention is a critical driver of profitability. Acquiring a new customer is significantly more expensive than retaining an existing one. However, identifying exactly when and why a customer might abandon a financial platform (churn) remains a complex challenge due to the high-dimensional nature of transactional data. FinRetain is designed to address this critical blind spot. It is an interactive visual analytics platform built to help financial analysts and product stakeholders dynamically explore customer demographics, track behavioral friction points, and proactively predict churn using advanced statistical modeling.
+In the highly competitive financial technology (FinTech) and banking sector, customer retention is a critical driver of profitability. Acquiring a new customer is significantly more expensive than retaining an existing one. However, identifying exactly when and why a customer might abandon a financial platform (churn) remains a complex challenge due to the high-dimensional nature of transactional data. FinRetain is designed to address this critical blind spot. It is an interactive visual analytics platform built to help financial analysts and product stakeholders dynamically explore customer demographics, track behavioral friction points, and proactively predict churn using advanced statistical modeling. Rather than analyzing isolated metrics, the storyboard presents a comprehensive view of the customer lifecycle. This approach allows analysts and decision-makers to understand patterns across different stages of user engagement and generate actionable insights.
 
-## 1.1 The Dataset
-
-The dataset powering FinRetain contains historical records of customer accounts and transactional logs, encompassing:
-
--   **Demographics:** Age, Gender, Education Level, Income Bracket.
-
--   **Engagement Metrics:** App Logins, Support Tickets Logged, Satisfaction Score (1-5).
-
--   **Transactional Data:** Transaction counts, average transaction values, and aggregated volumes across various types (Deposits, Payments, Transfers, Withdrawals).
-
--   **Target Variables:** Customer Tenure (months), Churn Probability, and Customer Lifetime Value (CLV).
-
-# 2. UI Design
-
-The FinRetain dashboard is designed to transform complex financial data into intuitive, actionable insights. To achieve this, our User Interface (UI) architecture strictly follows the principles of reducing cognitive load and maximizing interactivity. The application is divided into a consistent global shell and modular workspaces.
-
-## 2.1 Page 1: Exploratory Data (EDA)
-
-The EDA workspace is designed to provide a high-level demographic pulse of the customer base.
-
--   **Segmented Layout:** By utilizing a 2x2 grid, the UI allows for simultaneous comparison of categorical data (Income), continuous data (Age by Education), and density distributions (Tenure by Segment).
-
--   **Information Density:** We use "Ridge Plots" for Customer Tenure to show overlapping density across four segments (Platinum to Bronze) in a single vertical space, minimizing the need for multiple separate charts.
-
--   **Interactive Discovery:** Tooltips are configured to reveal exact values only upon hovering, keeping the initial visual clean and focused on macro trends.
-
-![](images/clipboard-1716024896.png)
-
-## 2.2 Page 2: Confirmatory Data (CDA)
-
-The CDA page shifts from what the data is to why variables correlate, focusing on statistical validation.
-
--   **Macro Correlation Matrix:** We use a half-matrix design to eliminate redundant data. The use of color-coded ellipses (Blue for positive, Red for negative) allows a researcher to spot strong relationships (like the **0.81 correlation** between Transaction Count and Volume) at a glance.
-
--   **Statistical Faceting:** The right-hand panel utilizes faceting to break down Spearman hypothesis testing by income bracket or education level. This allows the user to see if the relationship between satisfaction and transaction count remains consistent across different wealth tiers or education levels.
-
-![](images/clipboard-1002937195.png)
-
-## 2.3 Page 3: Customer Segmentation
-
-This page translates unsupervised machine learning (K-Means) into a business-readable format.
-
--   **Dual-Perspective Analysis:** The UI places a Scatter Plot (behavioral clusters) next to a Treemap (value stratification). This forces a connection between how a customer acts and what they are worth to the ecosystem.
-
--   **Color-Coded Personas:** We use a distinct qualitative color palette for Personas 1, 2, and 3 to ensure that Power Users are visually separated from Inactive or Occasional users across both charts.
-
-![](images/clipboard-1215545385.png)
-
-## 2.4 Page 4: Survival Timeline
-
-The Survival Timeline is built to track the pulse of customer retention over a 12-month cycle.
-
--   **The Kaplan-Meier Interface:** The UI focuses on a single, high-impact line graph with At-risk table positioned directly below the X-axis. This alignment ensures the user can correlate the drop-off in the curve with the raw number of customers remaining in the cohort.
-
--   **Channel Stratification:** A simple grouping variable dropdown allows for instant re-calculation of the curve by Acquisition Channel, Income Bracket, or Customer Segment, making it easy to identify which marketing segments have the highest longevity.
-
-![](images/clipboard-4223985807.png)
-
-## 2.5 Page 5: Ecosystem Cash Flow
-
-This module utilizes a Sankey Diagram to map the movement of trillions of dollars through the platform.
-
--   **Linear Flow Logic:** The UI follows a strict left-to-right source-to-sink logic. Money enters via deposits, pools in the App Wallet, and distributes into payments, transfers, and withdrawals.
-
--   **Scale Recognition:** The width of the flows provides an immediate proportional understanding of where the most capital is exiting the system.
-
-![](images/clipboard-3346255653.png)
-
-## 2.6 Page 6: Predictive Risk Simulator
-
-The final page is a low-code interface for high-level decision-making, turning a regression model into a tactile experience.
-
--   **Input/Output Loop:** The UI is split into sliders on the left and large color-blocked cards on the right.
-
--   **Prescriptive Design:** We don't just show a number. Instead, we also provide a recommended action, which moves beyond analysis into direct business intervention.
-
-![](images/clipboard-3199148564.png)
-
-# 3. Storyboard: The FinRetain Narrative
-
-Data without meaningful interpretation often becomes noise rather than insight. The FinRetain storyboard illustrates the full lifecycle of a FinTech customer, from their initial engagement with the platform to the potential risk of churn. Through this narrative structure, our visual analytics dashboard demonstrates how stakeholders can identify critical behavioral patterns and intervene at the right moments.
-
-## 3.1 Introduction
-
-The FinRetain project transforms complex, high-dimensional transactional data into a clear visual narrative of customer behavior, financial activity, and churn risk. Rather than analyzing isolated metrics, the storyboard presents a comprehensive view of the customer lifecycle. This approach allows analysts and decision-makers to understand patterns across different stages of user engagement and generate actionable insights.
-
-## 3.2 Motivation
+## 1.1 Motivation
 
 In the competitive FinTech industry, customer acquisition is costly, while long-term retention generates sustainable profitability. Despite this, many platform managers face a significant limitation. They can observe when users leave the platform but often lack the ability to identify the behavioral signals that precede churn.
 
@@ -109,7 +23,19 @@ FinRetain aims to shift this process from reactive reporting to proactive and pr
 
 By answering these questions, stakeholders can take earlier and more informed actions to improve customer retention.
 
-## 3.3 Methodology
+## 1.2 The Dataset
+
+The dataset powering FinRetain contains historical records of customer accounts and transactional logs, encompassing:
+
+-   **Demographics:** Age, Gender, Education Level, Income Bracket.
+
+-   **Engagement Metrics:** App Logins, Support Tickets Logged, Satisfaction Score (1-5).
+
+-   **Transactional Data:** Transaction counts, average transaction values, and aggregated volumes across various types (Deposits, Payments, Transfers, Withdrawals).
+
+-   **Target Variables:** Customer Tenure (months), Churn Probability, and Customer Lifetime Value (CLV).
+
+# 2. Methodology
 
 To construct this analytical narrative, the project follows a structured pipeline that progresses from descriptive insights to predictive modeling.
 
@@ -128,21 +54,29 @@ A Sankey diagram is used to visualize macro-level financial flows and identify k
 **Phase 5: Forecasting (Predictive Modeling)**\
 Regression-based predictive models estimate churn risk, customer lifetime value (CLV), and app logins frequency, providing recommended action to decision-makers.
 
-## 3.4 A Customer Journey
+# 3. Storyboard: The FinRetain Narrative
 
-### 3.4.1 Scene 1: Onboarding and Demographic Baseline (EDA)
+Data without meaningful interpretation often becomes noise rather than insight. The FinRetain storyboard illustrates the full lifecycle of a FinTech customer, from their initial engagement with the platform to the potential risk of churn. Through this narrative structure, our storyboard demonstrates how stakeholders can identify critical behavioral patterns and intervene at the right moments.
+
+## 3.1 Storyboard Design
+
+This storyboard represents the conceptual blueprint for **FinRetain**, an end-to-end visual analytics solution designed for the FinTech sector.
+
+![](images/clipboard-3440910163.png)
+
+## 3.2 Scene 1: Onboarding and Demographic Baseline (EDA)
 
 **Visualization:** Distribution plots, bar charts, and ridge plots.
 
 The journey begins when a customer joins the platform. The Exploratory Data Analysis page provides an overview of the demographic structure of the user base, including variables such as age, education level, income group, and tenure distribution across CLV segments. By visualizing these distributions, analysts can identify demographic patterns. These insights help guide product targeting and marketing strategies.
 
-### 3.4.2 Scene 2: Understanding Behavioral Relationships (CDA)
+## 3.3 Scene 2: Understanding Behavioral Relationships (CDA)
 
 **Visualization:** Correlation matrices and statistical plots.
 
 After establishing demographic patterns, the Confirmatory Data Analysis page explores relationships between behavioral variables. A correlation matrix allows analysts to quickly identify strong relationships among key indicators such as transaction frequency, transaction volume, and customer satisfaction. Additional statistical views break down these relationships across income groups, helping stakeholders determine whether behavioral patterns remain consistent across different customer segments.
 
-### 3.4.3 Scene 3: Identifying Customer Personas (Customer Segmentation)
+## 3.4 Scene 3: Identifying Customer Personas (Customer Segmentation)
 
 **Visualization:** K-Means cluster scatter plot and value stratification treemap.
 
@@ -152,31 +86,93 @@ The scatter plot on the left visualizes the clustering results using two key beh
 
 To complement this behavioral view, the treemap on the right provides a value-based perspective of the customer ecosystem. The size of each block represents median transaction count, while the color intensity reflects median transaction volume. Customers are further categorized into segments such as inactive, occasional, regular, and power users within broader CLV segments such as Platinum, Gold, Silver, and Bronze.
 
-### 3.4.4 Scene 4: The Ticking Clock of Retention (Survival Timeline)
+## 3.5 Scene 4: The Ticking Clock of Retention (Survival Timeline)
 
 **Visualization:** Kaplan-Meier survival curves and risk tables. As the customer journey progresses, the focus shifts from current behavior to future longevity. The Survival Timeline acts as a visual "ticking clock," mapping the probability that a customer will remain active over 12 months. By stratifying these curves by Acquisition Channel, Income Bracket, or Customer Segmentation, stakeholders can identify precisely when the phase ends for different cohorts.
 
-### 3.4.5 Scene 5: Mapping the Financial Ecosystem (Ecosystem Cash Flow)
+## 3.6 Scene 5: Mapping the Financial Ecosystem (Ecosystem Cash Flow)
 
 **Visualization:** Macro Liquidity Flow (Sankey Diagram).
 
 Zooming out from the individual user to the entire platform, we visualize the financial ecosystem of the company’s capital. The Sankey Diagram traces the movement of trillions of dollars in real-time. It begins with the source, i.e., Deposits, flowing into the central App Wallet, and then branching out to Payments, Transfers, and Withdrawals. The width of each flow line provides an immediate proportional understanding of the ecosystem's health.
 
-### 3.4.6 Scene 6: Simulating the Future (Predictive Risk Simulator)
+## 3.7 Scene 6: Simulating the Future (Predictive Risk Simulator)
 
 **Visualization:** Interactive slider inputs and value cards.
 
 The Predictive Risk Simulator allows stakeholders to step into the role of a strategist, manipulating behavioral levers such as Age, Support Ticket Count, Transaction Count, and Satisfaction Score to see how they impact a hypothetical customer’s future. As the user adjusts a slider, the Predicted Churn Risk, Predicted CLV, and Predicted App Logins Frequency update in real-time. Finally, the UI provides a prescriptive conclusion in the right bottom card, suggesting a specific Recommended Action, such as "Send: Educational Email," effectively turning visual data into a direct marching order for the decision-makers.
 
-## 3.5 Conclusion
+# 4. UI Design
 
-The **FinRetain** dashboard demonstrates that visual analytics transcends basic data plotting. It is a sophisticated engine for strategic decision-making. By weaving exploratory insights, algorithmic clustering, and predictive simulations into a single, cohesive narrative, we provide FinTech leaders with the clarity needed to safeguard their customers.
+The FinRetain dashboard is designed to transform complex financial data into intuitive, actionable insights. To achieve this, our User Interface (UI) architecture strictly follows the principles of reducing cognitive load and maximizing interactivity. The application is divided into a consistent global shell and modular workspaces.
 
-# 4. Methodology
+## 4.1 Page 1: Exploratory Data (EDA)
 
-## **4.1 Getting started**
+The EDA workspace is designed to provide a high-level demographic pulse of the customer base.
 
-### **4.1.1 Installing and loading the required libraries**
+-   **Segmented Layout:** By utilizing a 2x2 grid, the UI allows for simultaneous comparison of categorical data (Income), continuous data (Age by Education), and density distributions (Tenure by Segment).
+
+-   **Information Density:** We use "Ridge Plots" for Customer Tenure to show overlapping density across four segments (Platinum to Bronze) in a single vertical space, minimizing the need for multiple separate charts.
+
+-   **Interactive Discovery:** Tooltips are configured to reveal exact values only upon hovering, keeping the initial visual clean and focused on macro trends.
+
+![](images/clipboard-1716024896.png)
+
+## 4.2 Page 2: Confirmatory Data (CDA)
+
+The CDA page shifts from what the data is to why variables correlate, focusing on statistical validation.
+
+-   **Macro Correlation Matrix:** We use a half-matrix design to eliminate redundant data. The use of color-coded ellipses (Blue for positive, Red for negative) allows a researcher to spot strong relationships (like the **0.81 correlation** between Transaction Count and Volume) at a glance.
+
+-   **Statistical Faceting:** The right-hand panel utilizes faceting to break down Spearman hypothesis testing by income bracket or education level. This allows the user to see if the relationship between satisfaction and transaction count remains consistent across different wealth tiers or education levels.
+
+![](images/clipboard-1002937195.png)
+
+## 4.3 Page 3: Customer Segmentation
+
+This page translates unsupervised machine learning (K-Means) into a business-readable format.
+
+-   **Dual-Perspective Analysis:** The UI places a Scatter Plot (behavioral clusters) next to a Treemap (value stratification). This forces a connection between how a customer acts and what they are worth to the ecosystem.
+
+-   **Color-Coded Personas:** We use a distinct qualitative color palette for Personas 1, 2, and 3 to ensure that Power Users are visually separated from Inactive or Occasional users across both charts.
+
+![](images/clipboard-1215545385.png)
+
+## 4.4 Page 4: Survival Timeline
+
+The Survival Timeline is built to track the pulse of customer retention over a 12-month cycle.
+
+-   **The Kaplan-Meier Interface:** The UI focuses on a single, high-impact line graph with At-risk table positioned directly below the X-axis. This alignment ensures the user can correlate the drop-off in the curve with the raw number of customers remaining in the cohort.
+
+-   **Channel Stratification:** A simple grouping variable dropdown allows for instant re-calculation of the curve by Acquisition Channel, Income Bracket, or Customer Segment, making it easy to identify which marketing segments have the highest longevity.
+
+![](images/clipboard-4223985807.png)
+
+## 4.5 Page 5: Ecosystem Cash Flow
+
+This module utilizes a Sankey Diagram to map the movement of trillions of dollars through the platform.
+
+-   **Linear Flow Logic:** The UI follows a strict left-to-right source-to-sink logic. Money enters via deposits, pools in the App Wallet, and distributes into payments, transfers, and withdrawals.
+
+-   **Scale Recognition:** The width of the flows provides an immediate proportional understanding of where the most capital is exiting the system.
+
+![](images/clipboard-3346255653.png)
+
+## 4.6 Page 6: Predictive Risk Simulator
+
+The final page is a low-code interface for high-level decision-making, turning a regression model into a tactile experience.
+
+-   **Input/Output Loop:** The UI is split into sliders on the left and large color-blocked cards on the right.
+
+-   **Prescriptive Design:** We don't just show a number. Instead, we also provide a recommended action, which moves beyond analysis into direct business intervention.
+
+![](images/clipboard-3199148564.png)
+
+# 5. Technical Implementation
+
+## **5.1 Getting started**
+
+### **5.1.1 Installing and loading the required libraries**
 
 Before starting the analysis, the required R packages are installed and loaded into the R environment.
 
@@ -184,7 +180,7 @@ Before starting the analysis, the required R packages are installed and loaded i
 pacman::p_load(shiny, tidyverse, plotly, bslib, ggridges, corrplot, ggstatsplot, treemap, survival, survminer, networkD3)
 ```
 
-### **4.1.2 Importing data**
+### **5.1.2 Importing data**
 
 The code chunk below imports *customer_data.csv* and *transactions_data.csv* into R environment by using [*read_csv()*](https://readr.tidyverse.org/reference/read_delim.html)function of [**readr**](https://readr.tidyverse.org/) package.
 
@@ -193,7 +189,7 @@ customer <- read.csv("data/customer_data.csv")
 transactions <- read.csv("data/transactions_data.csv")
 ```
 
-## 4.2 Exploratory Data (EDA)
+## 5.2 Exploratory Data (EDA)
 
 Data preparation
 
@@ -288,9 +284,9 @@ p <- ggplot(plot_data,
 ggplotly(p)
 ```
 
-## 4.3 Confirmatory Data (CDA)
+## 5.3 Confirmatory Data (CDA)
 
-### 4.3.1 Macro Correlation Matrix
+### 5.3.1 Macro Correlation Matrix
 
 Data Preparation
 
@@ -319,7 +315,7 @@ corrplot.mixed(customer.cor,
                tl.col = "black")
 ```
 
-### 4.3.2 Statistical Hypothesis Testing (Spearman)
+### 5.3.2 Statistical Hypothesis Testing (Spearman)
 
 Data Preparation
 
@@ -369,9 +365,9 @@ ggscatterstats(data = plot_data,
         axis.text = element_text(size = 10))
 ```
 
-## 4.4 Customer Segmentation
+## 5.4 Customer Segmentation
 
-### 4.4.1 Algorithmic Personas (K-Means Clustering)
+### 5.4.1 Algorithmic Personas (K-Means Clustering)
 
 Data Preparation
 
@@ -401,7 +397,7 @@ ggplot(cluster_data, aes(x = tx_count, y = total_tx_volume, color = cluster)) +
         legend.title = element_text(size = 15))
 ```
 
-### 4.4.2 Value Stratification (Treemap)
+### 5.4.2 Value Stratification (Treemap)
 
 Data Preparation
 
@@ -426,7 +422,7 @@ treemap(plot_data,
 )
 ```
 
-## 4.5 Survival Timeline
+## 5.5 Survival Timeline
 
 Data Preparation
 
@@ -466,7 +462,7 @@ p$table <- p$table +
 p
 ```
 
-## 4.6 Ecosystem Cashflow
+## 5.6 Ecosystem Cashflow
 
 Data Preparation
 
@@ -499,7 +495,7 @@ sankeyNetwork(Links = links, Nodes = node_totals, Source = "IDsource", Target = 
               colourScale = JS("d3.scaleOrdinal().range(['#1c2541', '#0077b6', '#00b4d8', '#90e0ef']);"))
 ```
 
-## 4.7 Predictive Risk Simulator
+## 5.7 Predictive Risk Simulator
 
 Data Preparation
 
@@ -558,3 +554,7 @@ action <- case_when(
   
 action
 ```
+
+# 6. Conclusion
+
+The **FinRetain** dashboard demonstrates that visual analytics transcends basic data plotting. It is a sophisticated engine for strategic decision-making. By weaving exploratory insights, algorithmic clustering, and predictive simulations into a single, cohesive narrative, we provide FinTech leaders with the clarity needed to safeguard their customers.
