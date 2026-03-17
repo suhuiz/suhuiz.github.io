@@ -1013,5 +1013,12 @@
     "title": "Take-home_Ex02",
     "section": "3.7 Scene 6: Simulating the Future (Predictive Risk Simulator)",
     "text": "3.7 Scene 6: Simulating the Future (Predictive Risk Simulator)\nVisualization: Interactive slider inputs and value cards.\nThe Predictive Risk Simulator allows stakeholders to step into the role of a strategist, manipulating behavioral levers such as Age, Support Ticket Count, Transaction Count, and Satisfaction Score to see how they impact a hypothetical customer’s future. As the user adjusts a slider, the Predicted Churn Risk, Predicted CLV, and Predicted App Logins Frequency update in real-time. Finally, the UI provides a prescriptive conclusion in the right bottom card, suggesting a specific Recommended Action, such as “Send: Educational Email,” effectively turning visual data into a direct marching order for the decision-makers."
+  },
+  {
+    "objectID": "Take-home_Ex/Take-home_Ex02/Take-home_Ex02.html#objectives",
+    "href": "Take-home_Ex/Take-home_Ex02/Take-home_Ex02.html#objectives",
+    "title": "Take-home_Ex02",
+    "section": "1.1 Objectives",
+    "text": "1.1 Objectives\nFinRetain aims to shift the process from reactive reporting to proactive and predictive visual analytics. Specifically, the platform is designed to address three key questions:\n\nWho are the most valuable users on the platform?\nHow does money flow within the financial ecosystem?\nWhen and why are users likely to leave?\n\nBy answering these questions, stakeholders can take earlier and more informed actions to improve customer retention."
   }
 ]

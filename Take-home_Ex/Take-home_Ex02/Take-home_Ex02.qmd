@@ -7,13 +7,11 @@ Link to Shiny App: <https://zuosuhui.shinyapps.io/take-home_ex02/>
 
 # 1. Background
 
-In the highly competitive financial technology (FinTech) and banking sector, customer retention is a critical driver of profitability. Acquiring a new customer is significantly more expensive than retaining an existing one. However, identifying exactly when and why a customer might abandon a financial platform (churn) remains a complex challenge due to the high-dimensional nature of transactional data. FinRetain is designed to address this critical blind spot. It is an interactive visual analytics platform built to help financial analysts and product stakeholders dynamically explore customer demographics, track behavioral friction points, and proactively predict churn using advanced statistical modeling. Rather than analyzing isolated metrics, the storyboard presents a comprehensive view of the customer lifecycle. This approach allows analysts and decision-makers to understand patterns across different stages of user engagement and generate actionable insights.
+In the highly competitive financial technology (FinTech) and banking sector, customer retention is a critical driver of profitability. Acquiring a new customer is significantly more expensive than retaining an existing one. However, identifying exactly when and why a customer might abandon a financial platform (churn) remains a complex challenge due to the high-dimensional nature of transactional data. FinRetain is designed to address this critical blind spot. It is an interactive visual analytics platform built to help financial analysts and product stakeholders dynamically explore customer demographics, track behavioral friction points, and proactively predict churn using advanced statistical modeling. Rather than analyzing isolated metrics, FinRetain presents a comprehensive view of the customer lifecycle. This approach allows analysts and decision-makers to understand patterns across different stages of user engagement and generate actionable insights.
 
-## 1.1 Motivation
+## 1.1 Objectives
 
-In the competitive FinTech industry, customer acquisition is costly, while long-term retention generates sustainable profitability. Despite this, many platform managers face a significant limitation. They can observe when users leave the platform but often lack the ability to identify the behavioral signals that precede churn.
-
-FinRetain aims to shift this process from reactive reporting to proactive and predictive visual analytics. Specifically, the platform is designed to address three key questions:
+FinRetain aims to shift the process from reactive reporting to proactive and predictive visual analytics. Specifically, the platform is designed to address three key questions:
 
 1.  Who are the most valuable users on the platform?
 
